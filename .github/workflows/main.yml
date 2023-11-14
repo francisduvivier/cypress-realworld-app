@@ -109,6 +109,7 @@ jobs:
           spec: cypress/tests/ui/*
           config-file: cypress.config.ts
         env:
+          COMMIT_INFO_SHA: ${{ github.event.pull_request.head.sha }}
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # Recommended: pass the GitHub token lets this action correctly
@@ -156,6 +157,7 @@ jobs:
           spec: cypress/tests/ui/*
           config-file: cypress.config.ts
         env:
+          COMMIT_INFO_SHA: ${{ github.event.pull_request.head.sha }}
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # Recommended: pass the GitHub token lets this action correctly
@@ -201,6 +203,7 @@ jobs:
           spec: cypress/tests/ui/*
           config-file: cypress.config.ts
         env:
+          COMMIT_INFO_SHA: ${{ github.event.pull_request.head.sha }}
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # Recommended: pass the GitHub token lets this action correctly
@@ -247,6 +250,7 @@ jobs:
           spec: cypress/tests/ui/*
           config-file: cypress.config.ts
         env:
+          COMMIT_INFO_SHA: ${{ github.event.pull_request.head.sha }}
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # Recommended: pass the GitHub token lets this action correctly
@@ -291,6 +295,7 @@ jobs:
           spec: cypress/tests/ui/*
           config-file: cypress.config.ts
         env:
+          COMMIT_INFO_SHA: ${{ github.event.pull_request.head.sha }}
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # Recommended: pass the GitHub token lets this action correctly
